@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+       <title>寝転びながら読む論文</title>
+        <meta name="description" content="レスポンシブデザインを通して寝転びながら観ることが出来るコンテンツを作成しています。">
+        <meta name="keywords" content="ポートフォリオ, 研究論文, メンタルケア, レスポンシブデザイン">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/skeleton.css">
+        <link rel="stylesheet" href="../../css/style.css">
+		<link rel="stylesheet" href="../../css/study.css">
+    </head>
+    <body>
+        <header>
+            <div id="header_in" class="container">
+                <div class="row">
+                    <div class="six columns logo">
+                        <h1><a href="index.html"><img class="u-max-full-width" src="../../images/logo.png" alt="Web Designer - Kaoru Osumi"></a></h1>
+                    </div>
+                    <div class="six columns navi">
+                        <div class="sp_navi">
+                            <img id="sp_navi_btn" class="u-max-full-width" src="../../images/sp_navi.png" alt="sp_navi">
+                            <ul class="sp_navi_li">
+                                <li><a href="../../index.html">HOME</a></li>
+                                <li><a href="../../index.html#ACHIEVEMENTS">作品</a></li>
+                                <li><a href="../../index.html#CONTACT">お問い合わせ</a></li>
+                            </ul>
+                        </div>
+                        <div class="pc_navi">
+                            <ul class="pc_navi_li clearfix">
+                                <li class="navi_home"><a href="../../index.html">HOME</a></li>
+                                <li class="navi_achievements"><a href="../../index.html#ACHIEVEMENTS">ACHIEVEMENTS</a></li>
+                                <li class="navi_contact"><a href="../../index.html#CONTACT">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="profile">
+                <h5 class="text-center">谷中輝雄の価値形成過程に焦点を当てた精神保健医療福祉領域における学び合いの未来のための研究</h5>
+                <h6 class="text-center">(早稲田大学人間科学研究科人間科学専攻健康福祉科学研究領域2018年度卒業論文)</h6>
+                <p>このページでは、私が院生時代に執筆した修士論文を紹介します。調査結果の掲載にあたっては、母校と調査協力先に報告をいたしました。<br>※抄録のみ公開中です。近日中に全文公開予定です。</p>
+            </div>
+            <div id="index" class="container">
+                <div class="row">
+                    <div class="twelve columns">
+                        <a href="abstract.html" class="index-header">
+                            <h6>抄録</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a href="#" id="page_top">トップへ戻る</a>
+            <h6>&copy; Kaoru Osumi, All Rights Reserved.</h6>
+        </footer>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(function(){
+            $(document).ready(function(){
+                $("#sp_navi_btn").click(function () {
+                    $(this).next().slideToggle();
+                });
+            });
+            });
+        </script>
+        <script>
+            jQuery(function() {
+                var appear = false;
+                var pagetop = $('#page_top');
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) { 
+                      if (appear == false) {
+                        appear = true;
+                        pagetop.stop().animate({
+                          'bottom': '50px' 
+                        }, 300); 
+                      }
+                    } else {
+                      if (appear) {
+                        appear = false;
+                        pagetop.stop().animate({
+                          'bottom': '-50px' 
+                        }, 300); 
+                    }
+                }
+            });
+            pagetop.click(function () {
+                $('body, html').animate({ scrollTop: 0 }, 500); 
+                return false;
+            });
+        });
+    </script>
+    </body>
+</html>

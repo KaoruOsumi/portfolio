@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>寝転びながら読む論文</title>
+        <meta name="description" content="レスポンシブデザインを通して寝転びながら観ることが出来るコンテンツを作成しています。">
+        <meta name="keywords" content="ポートフォリオ, 研究論文, メンタルケア, レスポンシブデザイン">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/skeleton.css">
+        <link rel="stylesheet" href="../../css/style.css">
+		<link rel="stylesheet" href="../../css/study.css">
+    </head>
+    <body>
+        <header>
+            <div id="header_in" class="container">
+                <div class="row">
+                    <div class="six columns logo">
+                        <h1><a href="../../index.html"><img class="u-max-full-width" src="../../images/logo.png" alt="寝転びながら読む論文"></a></h1>
+                    </div>
+                    <div class="six columns navi">
+                        <div class="sp_navi">
+                            <img id="sp_navi_btn" class="u-max-full-width" src="../../images/sp_navi.png" alt="sp_navi">
+                            <ul class="sp_navi_li">
+                                <li><a href="../../index.html">HOME</a></li>
+                                <li><a href="../../index.html#ACHIEVEMENTS">作品</a></li>
+                                <li><a href="../../index.html#CONTACT">お問い合わせ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+			<div class="container" id="study">
+                <h6 class="text-center storong">図5　何でファミリーサポートセンターを知ったか(複数回答型アンケート)</h6>
+			</div>
+			<div class="container" id="contents">
+				<img class="u-max-full-width block-center" src="images/sp/figure5.jpg" alt="figure5">
+			</div>
+			<button type="button" class="block-center" onclick="location.href='chapter3.html#figure5'">本文に戻る</button>
+        </main>
+        <footer>
+            <h6>&copy; Kaoru Osumi, All Rights Reserved.</h6>
+        </footer>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(function(){
+            $(document).ready(function(){
+                $("#sp_navi_btn").click(function () {
+                    $(this).next().slideToggle();
+                });
+            });
+            });
+        </script>
+    </body>
+</html>

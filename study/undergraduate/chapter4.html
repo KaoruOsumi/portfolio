@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>寝転びながら読む論文</title>
+        <meta name="description" content="レスポンシブデザインを通して寝転びながら観ることが出来るコンテンツを作成しています。">
+        <meta name="keywords" content="ポートフォリオ, 研究論文, メンタルケア, レスポンシブデザイン">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/skeleton.css">
+        <link rel="stylesheet" href="../../css/style.css">
+		<link rel="stylesheet" href="../../css/study.css">
+    </head>
+    <body>
+        <header>
+            <div id="header_in" class="container">
+                <div class="row">
+                    <div class="six columns logo">
+                        <h1><a href="../../index.html"><img class="u-max-full-width" src="../../images/logo.png" alt="寝転びながら読む論文"></a></h1>
+                    </div>
+                    <div class="six columns navi">
+                        <div class="sp_navi">
+                            <img id="sp_navi_btn" class="u-max-full-width" src="../../images/sp_navi.png" alt="sp_navi">
+                            <ul class="sp_navi_li">
+                                <li><a href="../../index.html">HOME</a></li>
+                                <li><a href="../../index.html#ACHIEVEMENTS">作品</a></li>
+                                <li><a href="../../index.html#CONTACT">お問い合わせ</a></li>
+                            </ul>
+                        </div>
+                        <div class="pc_navi">
+                            <ul class="pc_navi_li clearfix">
+                                <li class="navi_home"><a href="../../index.html">HOME</a></li>
+                                <li class="navi_achievements"><a href="../../index.html#ACHIEVEMENTS">ACHIEVEMENTS</a></li>
+                                <li class="navi_contact"><a href="../../index.html#CONTACT">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="contents">
+                <div class="container" id="main">
+					<h5>終章</h5>
+					<p class="roman">Ⅰ. 結論</p>
+					<p>本研究の目的は、「人口減少社会における子育て支援を考える」というものであった。この目的に対しては、前章の社会調査研究において「子育て前の若者の活力を活かす」、「人と人とのつながりを見守る支援」、「住民の時間の尊重と支え合いの促進のバランス」、「本人を参画させていくネットワーキング」という4つの取り組みの可能性が考察された。</p>
+					<p>また各リサーチクエスチョンにおいても、「新しい豊かさとは何か」というリサーチクエスチョンには「人と人との新しいつながりである」と、「地域資源をどう活用するか」というリサーチクエスチョンには「情報と支援が必要となる」と、「必要な情報をどのように住民に伝えていくか」というリサーチクエスチョンには「情報を発信し、つなぐ工夫が必要である」と、次の研究につながる新しい仮説を立てることができた。以下は図1を修正した本論文の最終的なスキームである。</p>
+					<button type="button" class="block-center sp-button" id="figure7" onclick="location.href='figure7.html'">図7を見る</button>
+					<div class="pc-figure">
+						<img class="u-max-full-width" src="images/figure7.jpg" alt="figure7">
+						<p class="roman">図7　本論文のスキーム(最終版)</p>
+					</div>
+					<p>また、筆者自身が本研究の上で「人と人とのつながり」という豊かさを実感し、自身が住む地域で一住民として活動したいという気持ちが生まれたことも大きな収穫であった。</p>
+					<p class="roman">Ⅱ. 今後の課題</p>
+					<p>本研究においては、子育て支援を利用する親や提供者という大人の観点は含まれていたが、実際に預けられている子どもの満足度や、過去に預けられていた経験を持つ者の意識調査等、「子どもの観点」によるデータが不足していた。また本研究を進めるうちに、障害のある人や同性パートナーを持つ人々等、多様な地域の人々を子育て支援に誘うことの必要性についても考えたため、これらを今後の検討課題としたい。</p>
+					<p class="roman">Ⅲ. 謝辞</p>
+					<p>本論文が成るにあたっては多くの方からいただいた示唆や知見、支援によるところが大きく、この場を借りて感謝の意を述べたい。特にAファミサポの皆様方には交流の機会を重ねて設けて頂き、実態調査のフィードバックをくり返し受けることができた。また指導教員である小林理先生には、構想の段階から助言や励ましを頂き、大変お世話になった。深く御礼申し上げる次第である。</p>
+					<button type="button" class="block-center" onclick="location.href='index.html'">目次に戻る</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a href="#" id="page_top">トップへ戻る</a>
+            <h6>&copy; Kaoru Osumi, All Rights Reserved.</h6>
+        </footer>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(function(){
+            $(document).ready(function(){
+                $("#sp_navi_btn").click(function () {
+                    $(this).next().slideToggle();
+                });
+            });
+            });
+        </script>
+        <script>
+            jQuery(function() {
+                var appear = false;
+                var pagetop = $('#page_top');
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) { 
+                      if (appear == false) {
+                        appear = true;
+                        pagetop.stop().animate({
+                          'bottom': '50px' 
+                        }, 300); 
+                      }
+                    } else {
+                      if (appear) {
+                        appear = false;
+                        pagetop.stop().animate({
+                          'bottom': '-50px' 
+                        }, 300); 
+                    }
+                }
+            });
+            pagetop.click(function () {
+                $('body, html').animate({ scrollTop: 0 }, 500); 
+                return false;
+            });
+        });
+    </script>
+    </body>
+</html>

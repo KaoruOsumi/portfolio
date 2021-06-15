@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>寝転びながら読む論文</title>
+        <meta name="description" content="レスポンシブデザインを通して寝転びながら観ることが出来るコンテンツを作成しています。">
+        <meta name="keywords" content="ポートフォリオ, 研究論文, メンタルケア, レスポンシブデザイン">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/skeleton.css">
+        <link rel="stylesheet" href="../../css/style.css">
+		<link rel="stylesheet" href="../../css/study.css">
+    </head>
+    <body>
+        <header>
+            <div id="header_in" class="container">
+                <div class="row">
+                    <div class="six columns logo">
+                        <h1><a href="../../index.html"><img class="u-max-full-width" src="../../images/logo.png" alt="寝転びながら読む論文"></a></h1>
+                    </div>
+                    <div class="six columns navi">
+                        <div class="sp_navi">
+                            <img id="sp_navi_btn" class="u-max-full-width" src="../../images/sp_navi.png" alt="sp_navi">
+                            <ul class="sp_navi_li">
+                                <li><a href="../../index.html">HOME</a></li>
+                                <li><a href="../../index.html#ACHIEVEMENTS">作品</a></li>
+                                <li><a href="../../index.html#CONTACT">お問い合わせ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+			<div class="container" id="contents">
+				<h6 class="text-center storong sp_navi">図1 本論文のスキーム</h6>
+				<p class="pc_navi text-center" id="main">※申し訳ございません、このページはスマホ推奨です。PC用ページは<a href="chapter0.html">こちら</a>です。</p>
+			</div>
+			<div id="index" class="container sp_navi">
+				<a class="index-header">
+                	<h6>研究目的：人口減少社会における子育て支援を考える</h6>
+                </a>
+                <div class="index-container">
+                	<div class="index-list">
+                    	<h6 class="storong">大仮説1：人口減少は、新しい豊かさへの入口である。</h6>
+					</div>
+                    <div class="index-list">
+                        <h6>問1：新しい豊かさとは何か</h6>
+                    </div>
+					<div class="index-list">
+                        <h6>小仮説1：拡大・成長に変わるものである。</h6>
+                    </div>
+					<div class="index-list">
+                    	<h6 class="storong">大仮説2：地域福祉が鍵となる。</h6>
+					</div>
+                    <div class="index-list">
+                        <h6>問2：地域資源をどう活用するか</h6>
+                    </div>
+					<div class="index-list">
+                        <h6>小仮説2：地域資源を使いやすく編成していく必要がある。</h6>
+                    </div>
+					<div class="index-list">
+                        <h6>問3：必要な情報をどのように住民に伝えていくか</h6>
+                    </div>
+					<div class="index-list">
+                        <h6>小仮説3：広報の工夫が必要である。</h6>
+                    </div>
+                </div>
+            </div>
+			<button type="button" class="block-center" onclick="location.href='chapter0.html#figure1'">本文に戻る</button>
+        </main>
+        <footer>
+            <h6>&copy; Kaoru Osumi, All Rights Reserved.</h6>
+        </footer>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(function(){
+            $(document).ready(function(){
+                $("#sp_navi_btn").click(function () {
+                    $(this).next().slideToggle();
+                });
+            });
+            });
+        </script>
+    </body>
+</html>
