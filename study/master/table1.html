@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>寝転びながら読む論文</title>
+        <meta name="description" content="レスポンシブデザインを通して寝転びながら観ることが出来るコンテンツを作成しています。">
+        <meta name="keywords" content="ポートフォリオ, 研究論文, メンタルケア, レスポンシブデザイン">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/skeleton.css">
+        <link rel="stylesheet" href="../../css/style.css">
+		<link rel="stylesheet" href="../../css/study.css">
+    </head>
+    <body>
+        <header>
+            <div id="header_in" class="container">
+                <div class="row">
+                    <div class="six columns logo">
+                        <h1><a href="../../index.html"><img class="u-max-full-width" src="../../images/logo.png" alt="寝転びながら読む論文"></a></h1>
+                    </div>
+                    <div class="six columns navi">
+                        <div class="sp_navi">
+                            <img id="sp_navi_btn" class="u-max-full-width" src="../../images/sp_navi.png" alt="sp_navi">
+                            <ul class="sp_navi_li">
+                                <li><a href="../../index.html">HOME</a></li>
+                                <li><a href="../../index.html#ACHIEVEMENTS">作品</a></li>
+                                <li><a href="../../index.html#CONTACT">お問い合わせ</a></li>
+                            </ul>
+                        </div>
+                        <div class="pc_navi">
+                            <ul class="pc_navi_li clearfix">
+                                <li class="navi_home"><a href="../../index.html">HOME</a></li>
+                                <li class="navi_achievements"><a href="../../index.html#ACHIEVEMENTS">ACHIEVEMENTS</a></li>
+                                <li class="navi_contact"><a href="../../index.html#CONTACT">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+			<div class="container" id="study">
+				<h6 class="text-center storong">表1　谷中輝雄略歴</h6>
+			</div>
+			<div class="container">
+				<h6 class="storong">1970(昭和45)年</h6>
+				<p>「やどかりの里」を創設</p>
+				<h6 class="storong">1975(昭和50)～1979(昭和54)年</h6>
+				<p>全国精神医学ソーシャルワーカー協会会長</p>
+				<h6 class="storong">1990(平成2)～1999(平成11)年</h6>
+				<p>公衆衛生審議会委員</p>
+				<h6 class="storong">1990(平成2)～2003(平成15)年</h6>
+				<p>全国精神障害者社会復帰施設協会会長</p>
+				<h6 class="storong">1996(平成8)年</h6>
+				<p>『生活支援ー精神障害者生活支援の理念と方法ー』出版</p>
+				<h6 class="storong">1997(平成9)年</h6>
+				<p>仙台白百合女子大学に教授として就任</p>
+				<h6 class="storong">1998(平成10)～2004(平成16)年</h6>
+				<p>精神保健福祉士国家試験副委員長</p>
+				<h6 class="storong">2000(平成12)年</h6>
+				<p>北海道医療大学に教授として就任</p>
+				<h6 class="storong">2003(平成15)年</h6>
+				<p>全国精神保健福祉士養成校協会会長に就任<br>NPO法人精神保健福祉交流促進協会理事長に就任</p>
+				<h6 class="storong">2007(平成19)年</h6>
+				<p>仙台白百合女子大学に教授として就任</p>
+			</div>
+			<button type="button" class="block-center" onclick="location.href='chapter0.html#table1'">本文に戻る</button>
+        </main>
+        <footer>
+            <a href="#" id="page_top">トップへ戻る</a>
+            <h6>&copy; Kaoru Osumi, All Rights Reserved.</h6>
+        </footer>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(function(){
+            $(document).ready(function(){
+                $("#sp_navi_btn").click(function () {
+                    $(this).next().slideToggle();
+                });
+            });
+            });
+        </script>
+        <script>
+            jQuery(function() {
+                var appear = false;
+                var pagetop = $('#page_top');
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) { 
+                      if (appear == false) {
+                        appear = true;
+                        pagetop.stop().animate({
+                          'bottom': '50px' 
+                        }, 300); 
+                      }
+                    } else {
+                      if (appear) {
+                        appear = false;
+                        pagetop.stop().animate({
+                          'bottom': '-50px' 
+                        }, 300); 
+                    }
+                }
+            });
+            pagetop.click(function () {
+                $('body, html').animate({ scrollTop: 0 }, 500); 
+                return false;
+            });
+        });
+    </script>
+    </body>
+</html>

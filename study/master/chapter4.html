@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>寝転びながら読む論文</title>
+        <meta name="description" content="レスポンシブデザインを通して寝転びながら観ることが出来るコンテンツを作成しています。">
+        <meta name="keywords" content="ポートフォリオ, 研究論文, メンタルケア, レスポンシブデザイン">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/skeleton.css">
+        <link rel="stylesheet" href="../../css/style.css">
+		<link rel="stylesheet" href="../../css/study.css">
+    </head>
+    <body>
+        <header>
+            <div id="header_in" class="container">
+                <div class="row">
+                    <div class="six columns logo">
+                        <h1><a href="../../index.html"><img class="u-max-full-width" src="../../images/logo.png" alt="寝転びながら読む論文"></a></h1>
+                    </div>
+                    <div class="six columns navi">
+                        <div class="sp_navi">
+                            <img id="sp_navi_btn" class="u-max-full-width" src="../../images/sp_navi.png" alt="sp_navi">
+                            <ul class="sp_navi_li">
+                                <li><a href="../../index.html">HOME</a></li>
+                                <li><a href="../../index.html#ACHIEVEMENTS">作品</a></li>
+                                <li><a href="../../index.html#CONTACT">お問い合わせ</a></li>
+                            </ul>
+                        </div>
+                        <div class="pc_navi">
+                            <ul class="pc_navi_li clearfix">
+                                <li class="navi_home"><a href="../../index.html">HOME</a></li>
+                                <li class="navi_achievements"><a href="../../index.html#ACHIEVEMENTS">ACHIEVEMENTS</a></li>
+                                <li class="navi_contact"><a href="../../index.html#CONTACT">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="contents">
+                <div class="container" id="main">
+                    <h5>謝辞</h5>
+                    <p>最後に、本研究でご協力いただいた皆さまに感謝の意を述べさせていただきます。</p>
+					<p>この研究は、本当に多くの協力者の皆さまによって支えられ、完成をさせることができた研究でした。また、私自身がなりたい自分になれていたことに気がついた研究でもありました。何故なら、この研究を通して皆さまとの出会いを大切にし、良い関係を築くことに力を尽くすことが出来たからです。</p>
+					<p>「やどかりの里」の皆さまとは、共に活動参加をさせていただくことで貴重な出会いや経験を得ることが出来ました。また、多くの文献も紹介してくださりありがとうございました。</p>
+                    <p>全国各地の調査協力者の皆さまからは、その語りやお姿から学びと共に癒しや勇気をいただきました。とても温かい気持ちになりながら逐語録を起こしていました。素敵な調査の旅をありがとうございました。</p>
+					<p>また、この研究の基盤となった私自身の価値は、これまで私を支えてくださった両親や恩師、これまでに出会えた大切な人々により形成されたと考えています。これまでの皆さまとの出会いにも深く感謝をいたします。</p>
+					<p>そして、この研究を勧めてくださった指導教員の田中英樹先生には大変なご迷惑をおかけしました。ゆっくりと進むこの研究を見守っていただきありがとうございます。</p>
+                    <p>最後に、この研究の対象となって皆さまとの出会いをつなげていただいた谷中輝雄先生、本当にありがとうございました。谷中先生や皆さまからいただいた想いを大切にしながら、これからも人や自分に優しく出来る人になっていきたいと思います。</p>
+					<p class="arabic">2019年2月11日　大隅薫</p>
+					<button type="button" class="block-center" onclick="location.href='index.html'">目次に戻る</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a href="#" id="page_top">トップへ戻る</a>
+            <h6>&copy; Kaoru Osumi, All Rights Reserved.</h6>
+        </footer>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(function(){
+            $(document).ready(function(){
+                $("#sp_navi_btn").click(function () {
+                    $(this).next().slideToggle();
+                });
+            });
+            });
+        </script>
+        <script>
+            jQuery(function() {
+                var appear = false;
+                var pagetop = $('#page_top');
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) { 
+                      if (appear == false) {
+                        appear = true;
+                        pagetop.stop().animate({
+                          'bottom': '50px' 
+                        }, 300); 
+                      }
+                    } else {
+                      if (appear) {
+                        appear = false;
+                        pagetop.stop().animate({
+                          'bottom': '-50px' 
+                        }, 300); 
+                    }
+                }
+            });
+            pagetop.click(function () {
+                $('body, html').animate({ scrollTop: 0 }, 500); 
+                return false;
+            });
+        });
+    </script>
+    </body>
+</html>
